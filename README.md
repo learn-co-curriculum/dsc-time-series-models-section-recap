@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This short lesson summarizes the topics we covered in section 24 and why they'll be important to you as a data scientist.
+This short lesson summarizes the topics we covered in section 26 and why they'll be important to you as a data scientist.
 
 ## Objectives
 You will be able to:
@@ -13,9 +13,17 @@ You will be able to:
 ## Key Takeaways
 
 The key takeaways from this section include:
-* An interaction is a particular property of three or more variables, where two or more variables interact in a non-additive manner when affecting a third variable
-* Polynomial regression allows for better fitting data that isn't well predicted using a linear model
-* The risk of polynomial regressions is that it's easier to overfit data, so it's important to consider the Bias-Variance trade-off
-* Ridge and lasso regressions are two techniques for making complex models more expensive in the cost fnction, reducing the risk of overfitting
-* AIC and BIC are techniques for selecting between models
+* A White Noise model has a fixed and constant mean and variance, and no correlation over time
+* A Random Walk model has no specified mean or variance, but has a strong dependance over time
+* The Pandas `corr()` function can be used to return the correlation between various time series data sets
+* Autocorrelation allows us to identify how strongly each time serties observation is related to previous observations
+*  The autocorrelation function (ACF) is a function that represents autocorrelation of a time series as a function of the time lag
+* The Partial Autocorrelation Function (or PACF) gives the partial correlation of a time series with its own lagged values, controlling for the values of the time series at all shorter lags
+* ARMA (AutoRegressive and Moving Average) modeling is a tool for forecasting time series values by regressing the variable on its own lagged (past) values
+* ARMA models assume that you've already detrended your data and that there is no seasonality
+* ARIMA (Integrated ARMA) models allow for detrending as part of the modeling process and work well for data sets with trends but no seasonality
+* SARIMA (Seasonal ARIMA) models allow for both detrending and seasonality as part of the modeling process
+* Fracebook Prophet enables data analysts and developers alike to perform forecasting at scale in Python
+* Prophet uses Additive Synthesis for time series forecasting
+
 
